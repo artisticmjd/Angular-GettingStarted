@@ -20,6 +20,10 @@ export class ProductListComponent implements OnInit {
     this._listFilter = value;
   }
 
+  filterListby() {
+
+  }
+
   products: IProduct[] = [
     {
       "productId": 1,
@@ -80,6 +84,6 @@ export class ProductListComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.listFilter = 'cart';
   }
-
 }
